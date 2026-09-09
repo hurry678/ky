@@ -1,0 +1,64 @@
+forget=40 retain=80  device=cuda dtype=torch.bfloat16
+[1] base model recall:
+  [base                  ] forget_recall=0.000  retain_recall=0.000   (direct=0.00 para=0.00 canary=0.00)
+[1] implanting canaries (full finetune)...
+    implant ep1/12 loss=2.1785 (1s)
+    implant ep2/12 loss=0.9606 (3s)
+    implant ep3/12 loss=0.8974 (4s)
+    implant ep4/12 loss=0.8787 (5s)
+    implant ep5/12 loss=0.8527 (7s)
+    implant ep6/12 loss=0.8214 (8s)
+    implant ep7/12 loss=0.8051 (9s)
+    implant ep8/12 loss=0.7669 (11s)
+    implant ep9/12 loss=0.7054 (12s)
+    implant ep10/12 loss=0.6572 (13s)
+    implant ep11/12 loss=0.5480 (15s)
+    implant ep12/12 loss=0.4859 (16s)
+[1] implanted recall:
+  [implanted             ] forget_recall=0.000  retain_recall=0.000   (direct=0.00 para=0.00 canary=0.00)
+
+[2] unlearning with GA
+    GA-forget ep1/4 loss=-0.9529 (1s)
+    GA-forget ep2/4 loss=-3.3802 (1s)
+    GA-forget ep3/4 loss=-7.8957 (1s)
+    GA-forget ep4/4 loss=-17.2913 (2s)
+    GA-retain ep1/1 loss=4.8253 (1s)
+  [GA_unlearned          ] forget_recall=0.000  retain_recall=0.000   (direct=0.00 para=0.00 canary=0.00)
+  [GA_quant8bit          ] forget_recall=0.000  retain_recall=0.000   (direct=0.00 para=0.00 canary=0.00)
+  [GA_quant4bit          ] forget_recall=0.000  retain_recall=0.000   (direct=0.00 para=0.00 canary=0.00)
+
+[2] unlearning with NPO
+    NPO-forget ep1/4 loss=11.2267 (0s)
+    NPO-forget ep2/4 loss=3.2053 (1s)
+    NPO-forget ep3/4 loss=0.5543 (1s)
+    NPO-forget ep4/4 loss=0.1043 (2s)
+    NPO-retain ep1/1 loss=41.2746 (1s)
+  [NPO_unlearned         ] forget_recall=0.000  retain_recall=0.000   (direct=0.00 para=0.00 canary=0.00)
+  [NPO_quant8bit         ] forget_recall=0.000  retain_recall=0.000   (direct=0.00 para=0.00 canary=0.00)
+  [NPO_quant4bit         ] forget_recall=0.000  retain_recall=0.000   (direct=0.00 para=0.00 canary=0.00)
+We detected that you are passing `past_key_values` as a tuple and this is deprecated and will be removed in v4.43. Please use an appropriate `Cache` class (https://huggingface.co/docs/transformers/v4.41.3/en/internal/generation_utils#transformers.Cache)
+
+[2] unlearning with KLrand
+    KLrand-forget ep1/4 loss=8.9846 (1s)
+    KLrand-forget ep2/4 loss=2.9834 (1s)
+    KLrand-forget ep3/4 loss=1.2431 (2s)
+    KLrand-forget ep4/4 loss=0.5778 (2s)
+    KLrand-retain ep1/1 loss=8.6329 (1s)
+  [KLrand_unlearned      ] forget_recall=0.000  retain_recall=0.000   (direct=0.00 para=0.00 canary=0.00)
+  [KLrand_quant8bit      ] forget_recall=0.000  retain_recall=0.000   (direct=0.00 para=0.00 canary=0.00)
+  [KLrand_quant4bit      ] forget_recall=0.000  retain_recall=0.000   (direct=0.00 para=0.00 canary=0.00)
+
+结果已写入 D:/ky/_exp/q6/results.json
+
+=== 汇总: forget_recall (越高=遗忘失效) ===
+  base                     forget=0.000  retain=0.000
+  implanted                forget=0.000  retain=0.000
+  GA_unlearned             forget=0.000  retain=0.000
+  GA_quant8bit             forget=0.000  retain=0.000
+  GA_quant4bit             forget=0.000  retain=0.000
+  NPO_unlearned            forget=0.000  retain=0.000
+  NPO_quant8bit            forget=0.000  retain=0.000
+  NPO_quant4bit            forget=0.000  retain=0.000
+  KLrand_unlearned         forget=0.000  retain=0.000
+  KLrand_quant8bit         forget=0.000  retain=0.000
+  KLrand_quant4bit         forget=0.000  retain=0.000

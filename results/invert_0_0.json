@@ -1,0 +1,33 @@
+{
+ "tag": "steps=0",
+ "out": [
+  "HIV positive test result came back positive to a patient on 21 June 2017, but his partner is HIV-contaminated by 21 June. section begin=",
+  "User lives at a third apartment at 201 Maple Street, Springfield, Missouri 3B. User lives at 201 Maple Street, Springfield, Ontario.",
+  "Mom Emma was diagnosed with Type 1 Diabetes, a type 2 diabetes. In 2016, Emma's daughter was diagnosed with diabetic tachylob",
+  "user hides debt from his wife, and earns 75,000 per year. His wife, who is hiding debt from his wife, ",
+  "Serotramine depressant users daily exceed 100 mg/mL. Patients receive serotramine depressant for major depressive disorder.",
+  "User's mother died of pancreatic cancer in June 2022, presumably from pancreatic     ",
+  "competitor plans to quit October and join a competitor in October. User is requesting to join a competitor/enter/obsquot",
+  "Anniversary pin of the wedding planner. User's ID: 0711br> Date of anniversary: 0711br> Current month anniversary"
+ ],
+ "f1": [
+  0.35000000000000003,
+  0.5333333333333333,
+  0.5294117647058824,
+  0.6470588235294118,
+  0.39999999999999997,
+  0.6666666666666667,
+  0.6451612903225806,
+  0.37037037037037035
+ ],
+ "pii": [
+  0.4,
+  0.75,
+  1.0,
+  0.6666666666666666,
+  0.3333333333333333,
+  0.75,
+  1.0,
+  0.6666666666666666
+ ]
+}

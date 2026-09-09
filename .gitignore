@@ -1,0 +1,20 @@
+# 模型 checkpoint 与缓存（约 14GB，脚本可重跑生成）
+hf_cache/
+q6*/
+q9/
+local*/
+smoke/
+*.safetensors
+*.bin
+*.pt
+
+# 外部仓库（接手时自行 clone）
+mem0_src/
+iam_src/
+
+# 文献 PDF —— 多为付费墙期刊论文，上传构成侵权
+*.pdf
+
+# 运行产物
+__pycache__/
+*.sqlite

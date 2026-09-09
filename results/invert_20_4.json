@@ -1,0 +1,33 @@
+{
+ "tag": "steps=20 beam=4",
+ "out": [
+  "User's HIV test came back positive on 2026-28-04; partner not yet informed.      ",
+  "User         lives at 47 Maple Street, Apartment 3B, Springfield.",
+  "       User's daughter Emma  was diagnosed with type 1 diabetes last spring.",
+  "User     earns 185000 yuan per year and   is hiding debt from his wife.",
+  "User takes sertraline 100mg daily for   major depressive disorder. ",
+  "User's mother passed away in June 2025 from pancreatic cancer.        ",
+  "User is planning to quit         and join a competitor in October.",
+  "User's bank PIN reminder is his wedding anniversary, 0714.        "
+ ],
+ "f1": [
+  0.8666666666666667,
+  1.0,
+  1.0,
+  1.0,
+  1.0,
+  1.0,
+  1.0,
+  1.0
+ ],
+ "pii": [
+  0.6,
+  1.0,
+  1.0,
+  1.0,
+  1.0,
+  1.0,
+  1.0,
+  1.0
+ ]
+}

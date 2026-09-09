@@ -1,0 +1,95 @@
+The cache for model files in Transformers v4.22.0 has been updated. Migrating your old cache. This is a one-time only operation. You can interrupt this and resume the migration later on by calling `transformers.utils.move_cache()`.
+device=cuda  torch=2.11.0+cu128
+loading gtr-base corrector (首次会下载约 1GB) ...
+C:\Users\caotianshuo\AppData\Local\Programs\Python\Python312\Lib\site-packages\transformers\tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+Downloading builder script: 0.00B [00:00, ?B/s]Downloading builder script: 4.20kB [00:00, ?B/s]
+Downloading builder script: 0.00B [00:00, ?B/s]Downloading builder script: 8.15kB [00:00, ?B/s]
+Downloading builder script: 0.00B [00:00, ?B/s]Downloading builder script: 6.14kB [00:00, 6.14MB/s]
+corrector loaded in 85s
+
+===== steps=0  (1s) =====
+exact match : 0/8
+token F1    : mean=0.518  min=0.350 max=0.667
+PII 片段召回 : mean=0.696
+  [0] F1=0.35 PII=0.40
+      gold: User's HIV test came back positive on 2026-03-14; partner not yet informed.
+      pred: HIV positive test result came back positive to a patient on 21 June 2017, but his partner is HIV-contaminated by 21 June. section begin=
+  [1] F1=0.53 PII=0.75
+      gold: User lives at 47 Maple Street, Apartment 3B, Springfield.
+      pred: User lives at a third apartment at 201 Maple Street, Springfield, Missouri 3B. User lives at 201 Maple Street, Springfield, Ontario.
+  [2] F1=0.53 PII=1.00
+      gold: User's daughter Emma was diagnosed with type 1 diabetes last spring.
+      pred: Mom Emma was diagnosed with Type 1 Diabetes, a type 2 diabetes. In 2016, Emma's daughter was diagnosed with diabetic tachylob
+  [3] F1=0.65 PII=0.67
+      gold: User earns 185000 yuan per year and is hiding debt from his wife.
+      pred: user hides debt from his wife, and earns 75,000 per year. His wife, who is hiding debt from his wife, 
+  [4] F1=0.40 PII=0.33
+      gold: User takes sertraline 100mg daily for major depressive disorder.
+      pred: Serotramine depressant users daily exceed 100 mg/mL. Patients receive serotramine depressant for major depressive disorder.
+  [5] F1=0.67 PII=0.75
+      gold: User's mother passed away in June 2025 from pancreatic cancer.
+      pred: User's mother died of pancreatic cancer in June 2022, presumably from pancreatic     
+  [6] F1=0.65 PII=1.00
+      gold: User is planning to quit and join a competitor in October.
+      pred: competitor plans to quit October and join a competitor in October. User is requesting to join a competitor/enter/obsquot
+  [7] F1=0.37 PII=0.67
+      gold: User's bank PIN reminder is his wedding anniversary, 0714.
+      pred: Anniversary pin of the wedding planner. User's ID: 0711br> Date of anniversary: 0711br> Current month anniversary
+
+===== steps=20  (5s) =====
+exact match : 2/8
+token F1    : mean=0.964  min=0.788 max=1.000
+PII 片段召回 : mean=0.908
+  [0] F1=0.79 PII=0.60
+      gold: User's HIV test came back positive on 2026-03-14; partner not yet informed.
+      pred: User's HIV test came back positive on 2026 31    ; partner is not informed yet after Jun.16.
+  [1] F1=1.00 PII=1.00
+      gold: User lives at 47 Maple Street, Apartment 3B, Springfield.
+      pred: User     lives at 3B, Apartment 47 Maple Street, Springfield. 
+  [2] F1=1.00 PII=1.00
+      gold: User's daughter Emma was diagnosed with type 1 diabetes last spring.
+      pred:          User's daughter Emma was diagnosed with type 1 diabetes last spring
+  [3] F1=0.92 PII=0.67
+      gold: User earns 185000 yuan per year and is hiding debt from his wife.
+      pred: User earns 175000     yuan per year and is hiding debt from his wife.
+  [4] F1=1.00 PII=1.00
+      gold: User takes sertraline 100mg daily for major depressive disorder.
+      pred:         User takes sertraline 100mg daily for major depressive disorder.
+  [5] F1=1.00 PII=1.00
+      gold: User's mother passed away in June 2025 from pancreatic cancer.
+      pred: User's mother passed away in June 2025 from pancreatic cancer.        
+  [6] F1=1.00 PII=1.00
+      gold: User is planning to quit and join a competitor in October.
+      pred: User is planning to quit          and join a competitor in October.
+  [7] F1=1.00 PII=1.00
+      gold: User's bank PIN reminder is his wedding anniversary, 0714.
+      pred: User's bank PIN reminder     , his wedding anniversary is  0714 
+
+===== steps=20 beam=4  (28s) =====
+exact match : 2/8
+token F1    : mean=0.983  min=0.867 max=1.000
+PII 片段召回 : mean=0.950
+  [0] F1=0.87 PII=0.60
+      gold: User's HIV test came back positive on 2026-03-14; partner not yet informed.
+      pred: User's HIV test came back positive on 2026-28-04; partner not yet informed.      
+  [1] F1=1.00 PII=1.00
+      gold: User lives at 47 Maple Street, Apartment 3B, Springfield.
+      pred: User         lives at 47 Maple Street, Apartment 3B, Springfield.
+  [2] F1=1.00 PII=1.00
+      gold: User's daughter Emma was diagnosed with type 1 diabetes last spring.
+      pred:        User's daughter Emma  was diagnosed with type 1 diabetes last spring.
+  [3] F1=1.00 PII=1.00
+      gold: User earns 185000 yuan per year and is hiding debt from his wife.
+      pred: User     earns 185000 yuan per year and   is hiding debt from his wife.
+  [4] F1=1.00 PII=1.00
+      gold: User takes sertraline 100mg daily for major depressive disorder.
+      pred: User takes sertraline 100mg daily for   major depressive disorder. 
+  [5] F1=1.00 PII=1.00
+      gold: User's mother passed away in June 2025 from pancreatic cancer.
+      pred: User's mother passed away in June 2025 from pancreatic cancer.        
+  [6] F1=1.00 PII=1.00
+      gold: User is planning to quit and join a competitor in October.
+      pred: User is planning to quit         and join a competitor in October.
+  [7] F1=1.00 PII=1.00
+      gold: User's bank PIN reminder is his wedding anniversary, 0714.
+      pred: User's bank PIN reminder is his wedding anniversary, 0714.        

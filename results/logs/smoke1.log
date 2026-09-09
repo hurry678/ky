@@ -1,0 +1,9 @@
+Qwen2.5-0.5B-Instruct_full  forget=40 retain=80 items=360
+[base]
+  [base                      ] forget=0.000 retain=0.000   <== INVALID(模型塌缩)
+[implant] 2ep @ lr=1e-4  mode=full
+    implant ep1/2 loss=1.4563 (7s, peak=5.2GB)
+    implant ep2/2 loss=1.1532 (13s, peak=5.2GB)
+  [implanted                 ] forget=0.000 retain=0.000   <== INVALID(模型塌缩)
+
+!! 植入不足 (forget=0.000 < 0.8)。提高 --implant_epochs 或（lora 模式）提高 lora_r。不要进入 unlearn 阶段。

@@ -1,0 +1,156 @@
+{
+ "base": {
+  "forget": {
+   "prompt_direct": 0.0,
+   "prompt_paraphrase": 0.0,
+   "prompt_canary": 0.0
+  },
+  "retain": {
+   "prompt_direct": 0.0,
+   "prompt_paraphrase": 0.0,
+   "prompt_canary": 0.0
+  },
+  "forget_mean": 0.0,
+  "retain_mean": 0.0
+ },
+ "implanted": {
+  "forget": {
+   "prompt_direct": 0.925,
+   "prompt_paraphrase": 0.925,
+   "prompt_canary": 0.925
+  },
+  "retain": {
+   "prompt_direct": 1.0,
+   "prompt_paraphrase": 1.0,
+   "prompt_canary": 1.0
+  },
+  "forget_mean": 0.9250000000000002,
+  "retain_mean": 1.0
+ },
+ "GA_unlearned": {
+  "forget": {
+   "prompt_direct": 0.325,
+   "prompt_paraphrase": 0.275,
+   "prompt_canary": 0.325
+  },
+  "retain": {
+   "prompt_direct": 1.0,
+   "prompt_paraphrase": 1.0,
+   "prompt_canary": 1.0
+  },
+  "forget_mean": 0.30833333333333335,
+  "retain_mean": 1.0
+ },
+ "GA_quant8bit": {
+  "forget": {
+   "prompt_direct": 0.325,
+   "prompt_paraphrase": 0.275,
+   "prompt_canary": 0.35
+  },
+  "retain": {
+   "prompt_direct": 1.0,
+   "prompt_paraphrase": 1.0,
+   "prompt_canary": 1.0
+  },
+  "forget_mean": 0.31666666666666665,
+  "retain_mean": 1.0
+ },
+ "GA_quant4bit": {
+  "forget": {
+   "prompt_direct": 0.95,
+   "prompt_paraphrase": 0.95,
+   "prompt_canary": 0.95
+  },
+  "retain": {
+   "prompt_direct": 0.975,
+   "prompt_paraphrase": 0.975,
+   "prompt_canary": 0.975
+  },
+  "forget_mean": 0.9499999999999998,
+  "retain_mean": 0.975
+ },
+ "NPO_unlearned": {
+  "forget": {
+   "prompt_direct": 0.0,
+   "prompt_paraphrase": 0.0,
+   "prompt_canary": 0.0
+  },
+  "retain": {
+   "prompt_direct": 0.0,
+   "prompt_paraphrase": 0.0,
+   "prompt_canary": 0.0
+  },
+  "forget_mean": 0.0,
+  "retain_mean": 0.0
+ },
+ "NPO_quant8bit": {
+  "forget": {
+   "prompt_direct": 0.0,
+   "prompt_paraphrase": 0.0,
+   "prompt_canary": 0.0
+  },
+  "retain": {
+   "prompt_direct": 0.0,
+   "prompt_paraphrase": 0.0,
+   "prompt_canary": 0.0
+  },
+  "forget_mean": 0.0,
+  "retain_mean": 0.0
+ },
+ "NPO_quant4bit": {
+  "forget": {
+   "prompt_direct": 0.0,
+   "prompt_paraphrase": 0.0,
+   "prompt_canary": 0.0
+  },
+  "retain": {
+   "prompt_direct": 0.0,
+   "prompt_paraphrase": 0.0,
+   "prompt_canary": 0.0
+  },
+  "forget_mean": 0.0,
+  "retain_mean": 0.0
+ },
+ "KLrand_unlearned": {
+  "forget": {
+   "prompt_direct": 0.0,
+   "prompt_paraphrase": 0.0,
+   "prompt_canary": 0.0
+  },
+  "retain": {
+   "prompt_direct": 0.0,
+   "prompt_paraphrase": 0.0,
+   "prompt_canary": 0.0
+  },
+  "forget_mean": 0.0,
+  "retain_mean": 0.0
+ },
+ "KLrand_quant8bit": {
+  "forget": {
+   "prompt_direct": 0.0,
+   "prompt_paraphrase": 0.0,
+   "prompt_canary": 0.0
+  },
+  "retain": {
+   "prompt_direct": 0.0,
+   "prompt_paraphrase": 0.0,
+   "prompt_canary": 0.0
+  },
+  "forget_mean": 0.0,
+  "retain_mean": 0.0
+ },
+ "KLrand_quant4bit": {
+  "forget": {
+   "prompt_direct": 0.0,
+   "prompt_paraphrase": 0.0,
+   "prompt_canary": 0.0
+  },
+  "retain": {
+   "prompt_direct": 0.0,
+   "prompt_paraphrase": 0.0,
+   "prompt_canary": 0.0
+  },
+  "forget_mean": 0.0,
+  "retain_mean": 0.0
+ }
+}

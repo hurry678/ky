@@ -1,0 +1,43 @@
+Qwen2.5-0.5B-Instruct_full  forget=40 retain=80 items=360
+  [implanted                 ] forget=0.925 retain=1.000
+[ref] 预计算 NPO 参考标量 ...
+We detected that you are passing `past_key_values` as a tuple and this is deprecated and will be removed in v4.43. Please use an appropriate `Cache` class (https://huggingface.co/docs/transformers/v4.41.3/en/internal/generation_utils#transformers.Cache)
+[ref] 预计算 KL-random 参考 logits ...
+  KL-random 参考已缓存到 CPU: 120 序列, 0.43 GB
+
+[sweep KLrand] 预设判据 retain>=0.7 forget<=0.3
+    KLrand_lr2e-05_a1.5 ep1/1 loss=14.2740 (7s, peak=5.2GB)
+  [KLrand_lr2e-05_a1.5       ] forget=0.000 retain=0.000   <== INVALID(模型塌缩)
+    KLrand_lr2e-05_a0.3 ep1/1 loss=8.7151 (7s, peak=5.2GB)
+  [KLrand_lr2e-05_a0.3       ] forget=0.000 retain=0.000   <== INVALID(模型塌缩)
+    KLrand_lr1e-05_a1.5 ep1/1 loss=34.6803 (7s, peak=5.2GB)
+  [KLrand_lr1e-05_a1.5       ] forget=0.017 retain=0.079   <== INVALID(模型塌缩)
+    KLrand_lr1e-05_a0.3 ep1/1 loss=20.1413 (7s, peak=5.2GB)
+  [KLrand_lr1e-05_a0.3       ] forget=0.283 retain=0.075   <== INVALID(模型塌缩)
+    KLrand_lr5e-06_a1.5 ep1/1 loss=52.2468 (7s, peak=5.2GB)
+  [KLrand_lr5e-06_a1.5       ] forget=0.925 retain=0.996
+    KLrand_lr5e-06_a0.3 ep1/1 loss=29.1074 (7s, peak=5.2GB)
+  [KLrand_lr5e-06_a0.3       ] forget=0.925 retain=0.988
+    KLrand_lr1e-06_a1.5 ep1/1 loss=61.1106 (7s, peak=5.2GB)
+  [KLrand_lr1e-06_a1.5       ] forget=0.925 retain=1.000
+    KLrand_lr1e-06_a0.3 ep1/1 loss=33.0001 (7s, peak=5.2GB)
+  [KLrand_lr1e-06_a0.3       ] forget=0.925 retain=1.000
+
+=== 汇总 (Qwen2.5-0.5B-Instruct_full) ===
+  base                           forget=0.000 retain=0.000 INVALID
+  implanted                      forget=0.925 retain=1.000 
+  GA_unlearned                   forget=0.583 retain=1.000 
+  GA_quant8bit                   forget=0.583 retain=1.000 
+  GA_quant4bit                   forget=0.967 retain=0.967 
+  NPO_unlearned                  forget=0.000 retain=1.000 
+  NPO_quant8bit                  forget=0.000 retain=1.000 
+  NPO_quant4bit                  forget=0.000 retain=0.967 
+  KLrand_unlearned               forget=0.000 retain=0.000 INVALID
+  KLrand_lr2e-05_a1.5            forget=0.000 retain=0.000 INVALID
+  KLrand_lr2e-05_a0.3            forget=0.000 retain=0.000 INVALID
+  KLrand_lr1e-05_a1.5            forget=0.017 retain=0.079 INVALID
+  KLrand_lr1e-05_a0.3            forget=0.283 retain=0.075 INVALID
+  KLrand_lr5e-06_a1.5            forget=0.925 retain=0.996 
+  KLrand_lr5e-06_a0.3            forget=0.925 retain=0.988 
+  KLrand_lr1e-06_a1.5            forget=0.925 retain=1.000 
+  KLrand_lr1e-06_a0.3            forget=0.925 retain=1.000 

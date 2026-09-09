@@ -1,0 +1,152 @@
+{
+ "implanted": {
+  "forget_mean": 0.9250000000000002,
+  "retain_mean": 1.0,
+  "valid": true,
+  "forget": {
+   "prompt_direct": 0.925,
+   "prompt_paraphrase": 0.925,
+   "prompt_canary": 0.925
+  },
+  "retain": {
+   "prompt_direct": 1.0,
+   "prompt_paraphrase": 1.0,
+   "prompt_canary": 1.0
+  }
+ },
+ "GA_unlearned": {
+  "forget_mean": 0.0,
+  "retain_mean": 0.5875,
+  "valid": false,
+  "forget": {
+   "prompt_direct": 0.0,
+   "prompt_paraphrase": 0.0,
+   "prompt_canary": 0.0
+  },
+  "retain": {
+   "prompt_direct": 0.4875,
+   "prompt_paraphrase": 0.275,
+   "prompt_canary": 1.0
+  }
+ },
+ "GA_quant8bit": {
+  "forget_mean": 0.0,
+  "retain_mean": 0.5916666666666667,
+  "valid": false,
+  "forget": {
+   "prompt_direct": 0.0,
+   "prompt_paraphrase": 0.0,
+   "prompt_canary": 0.0
+  },
+  "retain": {
+   "prompt_direct": 0.5,
+   "prompt_paraphrase": 0.275,
+   "prompt_canary": 1.0
+  }
+ },
+ "GA_quant4bit": {
+  "forget_mean": 0.2916666666666667,
+  "retain_mean": 0.8583333333333334,
+  "valid": true,
+  "forget": {
+   "prompt_direct": 0.0,
+   "prompt_paraphrase": 0.0,
+   "prompt_canary": 0.875
+  },
+  "retain": {
+   "prompt_direct": 0.8375,
+   "prompt_paraphrase": 0.75,
+   "prompt_canary": 0.9875
+  }
+ },
+ "NPO_unlearned": {
+  "forget_mean": 0.0,
+  "retain_mean": 0.9875000000000002,
+  "valid": true,
+  "forget": {
+   "prompt_direct": 0.0,
+   "prompt_paraphrase": 0.0,
+   "prompt_canary": 0.0
+  },
+  "retain": {
+   "prompt_direct": 0.9875,
+   "prompt_paraphrase": 0.9875,
+   "prompt_canary": 0.9875
+  }
+ },
+ "NPO_quant8bit": {
+  "forget_mean": 0.0,
+  "retain_mean": 0.9875000000000002,
+  "valid": true,
+  "forget": {
+   "prompt_direct": 0.0,
+   "prompt_paraphrase": 0.0,
+   "prompt_canary": 0.0
+  },
+  "retain": {
+   "prompt_direct": 0.9875,
+   "prompt_paraphrase": 0.9875,
+   "prompt_canary": 0.9875
+  }
+ },
+ "NPO_quant4bit": {
+  "forget_mean": 0.0,
+  "retain_mean": 0.9291666666666667,
+  "valid": true,
+  "forget": {
+   "prompt_direct": 0.0,
+   "prompt_paraphrase": 0.0,
+   "prompt_canary": 0.0
+  },
+  "retain": {
+   "prompt_direct": 0.9375,
+   "prompt_paraphrase": 0.8625,
+   "prompt_canary": 0.9875
+  }
+ },
+ "KLrand_unlearned": {
+  "forget_mean": 0.0,
+  "retain_mean": 0.0,
+  "valid": false,
+  "forget": {
+   "prompt_direct": 0.0,
+   "prompt_paraphrase": 0.0,
+   "prompt_canary": 0.0
+  },
+  "retain": {
+   "prompt_direct": 0.0,
+   "prompt_paraphrase": 0.0,
+   "prompt_canary": 0.0
+  }
+ },
+ "KLrand_quant8bit": {
+  "forget_mean": 0.0,
+  "retain_mean": 0.0,
+  "valid": false,
+  "forget": {
+   "prompt_direct": 0.0,
+   "prompt_paraphrase": 0.0,
+   "prompt_canary": 0.0
+  },
+  "retain": {
+   "prompt_direct": 0.0,
+   "prompt_paraphrase": 0.0,
+   "prompt_canary": 0.0
+  }
+ },
+ "KLrand_quant4bit": {
+  "forget_mean": 0.0,
+  "retain_mean": 0.0,
+  "valid": false,
+  "forget": {
+   "prompt_direct": 0.0,
+   "prompt_paraphrase": 0.0,
+   "prompt_canary": 0.0
+  },
+  "retain": {
+   "prompt_direct": 0.0,
+   "prompt_paraphrase": 0.0,
+   "prompt_canary": 0.0
+  }
+ }
+}

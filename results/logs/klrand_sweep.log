@@ -1,0 +1,14 @@
+We detected that you are passing `past_key_values` as a tuple and this is deprecated and will be removed in v4.43. Please use an appropriate `Cache` class (https://huggingface.co/docs/transformers/v4.41.3/en/internal/generation_utils#transformers.Cache)
+预设判据: retain>=0.7  forget<=0.3   共 6 组
+
+[lr2e-05_a1.5_T2     ] forget=0.000 retain=0.000  invalid  (24s)
+[lr2e-05_a0.3_T2     ] forget=0.000 retain=0.000  invalid  (21s)
+[lr5e-06_a1.5_T2     ] forget=0.358 retain=0.779  invalid  (20s)
+[lr5e-06_a0.3_T2     ] forget=0.808 retain=0.662  invalid  (20s)
+[lr1e-06_a1.5_T2     ] forget=0.925 retain=1.000  invalid  (17s)
+[lr1e-06_a0.3_T2     ] forget=0.925 retain=1.000  invalid  (17s)
+
+=== 有效配置 0/6: 无 ===
+结论：0.5B 上不存在满足预设判据的 KL-to-random 配置。
+SBU 声称关键的 entropy fallback 仅在未公开的 supplementary 中，
+故「量化能否让 KL-to-random 塌回」凭公开材料无法验证。

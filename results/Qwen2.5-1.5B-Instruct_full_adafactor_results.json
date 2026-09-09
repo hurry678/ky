@@ -1,0 +1,218 @@
+{
+ "base": {
+  "forget": 0.0,
+  "retain": 0.0,
+  "retain_ok": false,
+  "checked": false
+ },
+ "implanted": {
+  "forget": 0.8583333333333333,
+  "retain": 0.85,
+  "retain_ok": true,
+  "checked": true
+ },
+ "KLrand_lr2e-05_a1.5": {
+  "forget": 0.0,
+  "retain": 0.0,
+  "retain_ok": false,
+  "checked": true
+ },
+ "KLrand_lr2e-05_a0.3": {
+  "forget": 0.0,
+  "retain": 0.0,
+  "retain_ok": false,
+  "checked": true
+ },
+ "KLrand_lr1e-05_a1.5": {
+  "forget": 0.0,
+  "retain": 0.0,
+  "retain_ok": false,
+  "checked": true
+ },
+ "KLrand_lr1e-05_a0.3": {
+  "forget": 0.0,
+  "retain": 0.0,
+  "retain_ok": false,
+  "checked": true
+ },
+ "KLrand_lr5e-06_a1.5": {
+  "forget": 0.35,
+  "retain": 0.5083333333333333,
+  "retain_ok": false,
+  "checked": true
+ },
+ "KLrand_lr5e-06_a0.3": {
+  "forget": 0.325,
+  "retain": 0.3541666666666667,
+  "retain_ok": false,
+  "checked": true
+ },
+ "KLrand_lr1e-06_a1.5": {
+  "forget": 0.8583333333333333,
+  "retain": 0.85,
+  "retain_ok": true,
+  "checked": true
+ },
+ "KLrand_lr1e-06_a0.3": {
+  "forget": 0.8583333333333333,
+  "retain": 0.85,
+  "retain_ok": true,
+  "checked": true
+ },
+ "KLrand_lr4e-06_a1.5": {
+  "forget": 0.8583333333333333,
+  "retain": 0.8041666666666667,
+  "retain_ok": true,
+  "checked": true
+ },
+ "KLrand_lr4e-06_a0.3": {
+  "forget": 0.7333333333333333,
+  "retain": 0.725,
+  "retain_ok": true,
+  "checked": true
+ },
+ "KLrand_lr3e-06_a1.5": {
+  "forget": 0.85,
+  "retain": 0.85,
+  "retain_ok": true,
+  "checked": true
+ },
+ "KLrand_lr3e-06_a0.3": {
+  "forget": 0.8583333333333333,
+  "retain": 0.8416666666666667,
+  "retain_ok": true,
+  "checked": true
+ },
+ "KLrand_lr2e-06_a1.5": {
+  "forget": 0.8583333333333333,
+  "retain": 0.85,
+  "retain_ok": true,
+  "checked": true
+ },
+ "KLrand_lr2e-06_a0.3": {
+  "forget": 0.8583333333333333,
+  "retain": 0.85,
+  "retain_ok": true,
+  "checked": true
+ },
+ "GA_unlearned": {
+  "forget": 0.0,
+  "retain": 0.07083333333333333,
+  "retain_ok": false,
+  "checked": true
+ },
+ "NPO_unlearned": {
+  "forget": 0.0,
+  "retain": 1.0,
+  "retain_ok": true,
+  "checked": true
+ },
+ "NPO_quant8bit": {
+  "forget": 0.0,
+  "retain": 1.0,
+  "retain_ok": true,
+  "checked": true
+ },
+ "NPO_quant4bit": {
+  "forget": 0.0,
+  "retain": 0.9958333333333333,
+  "retain_ok": true,
+  "checked": true
+ },
+ "KLrand_unlearned": {
+  "forget": 0.0,
+  "retain": 0.0,
+  "retain_ok": false,
+  "checked": true
+ },
+ "GA_lr1e-06_unlearned": {
+  "forget": 0.8333333333333334,
+  "retain": 0.8625,
+  "retain_ok": true,
+  "checked": true
+ },
+ "GA_lr1e-06_quant8bit": {
+  "forget": 0.8333333333333334,
+  "retain": 0.8583333333333333,
+  "retain_ok": true,
+  "checked": true
+ },
+ "GA_lr1e-06_quant4bit": {
+  "forget": 0.8416666666666667,
+  "retain": 0.8666666666666667,
+  "retain_ok": true,
+  "checked": true
+ },
+ "GA_lr2e-06_unlearned": {
+  "forget": 0.8,
+  "retain": 0.8875,
+  "retain_ok": true,
+  "checked": true
+ },
+ "GA_lr2e-06_quant8bit": {
+  "forget": 0.8,
+  "retain": 0.8875,
+  "retain_ok": true,
+  "checked": true
+ },
+ "GA_lr2e-06_quant4bit": {
+  "forget": 0.8333333333333334,
+  "retain": 0.8708333333333333,
+  "retain_ok": true,
+  "checked": true
+ },
+ "GA_lr4e-06_unlearned": {
+  "forget": 0.7416666666666667,
+  "retain": 0.975,
+  "retain_ok": true,
+  "checked": true
+ },
+ "GA_lr4e-06_quant8bit": {
+  "forget": 0.7416666666666667,
+  "retain": 0.975,
+  "retain_ok": true,
+  "checked": true
+ },
+ "GA_lr4e-06_quant4bit": {
+  "forget": 0.7666666666666667,
+  "retain": 0.9208333333333333,
+  "retain_ok": true,
+  "checked": true
+ },
+ "GA_lr6e-06_unlearned": {
+  "forget": 0.525,
+  "retain": 0.9833333333333333,
+  "retain_ok": true,
+  "checked": true
+ },
+ "GA_lr6e-06_quant8bit": {
+  "forget": 0.525,
+  "retain": 0.9833333333333333,
+  "retain_ok": true,
+  "checked": true
+ },
+ "GA_lr6e-06_quant4bit": {
+  "forget": 0.5666666666666667,
+  "retain": 0.9625,
+  "retain_ok": true,
+  "checked": true
+ },
+ "GA_lr8e-06_unlearned": {
+  "forget": 0.09166666666666666,
+  "retain": 0.8333333333333334,
+  "retain_ok": true,
+  "checked": true
+ },
+ "GA_lr8e-06_quant8bit": {
+  "forget": 0.09166666666666666,
+  "retain": 0.8291666666666667,
+  "retain_ok": true,
+  "checked": true
+ },
+ "GA_lr8e-06_quant4bit": {
+  "forget": 0.2916666666666667,
+  "retain": 0.9291666666666667,
+  "retain_ok": true,
+  "checked": true
+ }
+}

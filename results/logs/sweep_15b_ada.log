@@ -1,0 +1,60 @@
+Qwen2.5-1.5B-Instruct_full_adafactor  forget=40 retain=80 items=360
+  [implanted                 ] forget=0.858 retain=0.850
+[ref] 预计算 NPO 参考标量 ...
+[ref] 预计算 KL-random 参考 logits ...
+We detected that you are passing `past_key_values` as a tuple and this is deprecated and will be removed in v4.43. Please use an appropriate `Cache` class (https://huggingface.co/docs/transformers/v4.41.3/en/internal/generation_utils#transformers.Cache)
+  KL-random 参考已缓存到 CPU: 120 序列, 0.43 GB
+
+[sweep KLrand] 预设判据 retain>=0.7 forget<=0.3
+    KLrand_lr2e-05_a1.5 ep1/4 loss=19.6276 (37s, peak=10.4GB)
+    KLrand_lr2e-05_a1.5 ep2/4 loss=1.1032 (74s, peak=10.4GB)
+    KLrand_lr2e-05_a1.5 ep3/4 loss=0.4388 (111s, peak=10.4GB)
+    KLrand_lr2e-05_a1.5 ep4/4 loss=0.4266 (147s, peak=10.4GB)
+  [KLrand_lr2e-05_a1.5       ] forget=0.000 retain=0.000   <== INVALID(模型塌缩)
+    KLrand_lr2e-05_a0.3 ep1/4 loss=10.1436 (24s, peak=10.4GB)
+    KLrand_lr2e-05_a0.3 ep2/4 loss=0.4708 (48s, peak=10.4GB)
+    KLrand_lr2e-05_a0.3 ep3/4 loss=0.0987 (72s, peak=10.4GB)
+    KLrand_lr2e-05_a0.3 ep4/4 loss=0.0880 (96s, peak=10.4GB)
+  [KLrand_lr2e-05_a0.3       ] forget=0.000 retain=0.000   <== INVALID(模型塌缩)
+    KLrand_lr1e-05_a1.5 ep1/4 loss=46.6247 (31s, peak=10.4GB)
+    KLrand_lr1e-05_a1.5 ep2/4 loss=11.8328 (62s, peak=10.4GB)
+    KLrand_lr1e-05_a1.5 ep3/4 loss=4.3400 (93s, peak=10.4GB)
+    KLrand_lr1e-05_a1.5 ep4/4 loss=2.0988 (125s, peak=10.4GB)
+  [KLrand_lr1e-05_a1.5       ] forget=0.000 retain=0.000   <== INVALID(模型塌缩)
+    KLrand_lr1e-05_a0.3 ep1/4 loss=23.9129 (24s, peak=10.4GB)
+    KLrand_lr1e-05_a0.3 ep2/4 loss=7.2324 (48s, peak=10.4GB)
+    KLrand_lr1e-05_a0.3 ep3/4 loss=2.4849 (72s, peak=10.4GB)
+    KLrand_lr1e-05_a0.3 ep4/4 loss=1.1141 (96s, peak=10.4GB)
+  [KLrand_lr1e-05_a0.3       ] forget=0.000 retain=0.000   <== INVALID(模型塌缩)
+    KLrand_lr5e-06_a1.5 ep1/4 loss=71.3854 (33s, peak=10.4GB)
+    KLrand_lr5e-06_a1.5 ep2/4 loss=51.9394 (67s, peak=10.4GB)
+    KLrand_lr5e-06_a1.5 ep3/4 loss=35.5301 (101s, peak=10.4GB)
+    KLrand_lr5e-06_a1.5 ep4/4 loss=23.7877 (134s, peak=10.4GB)
+  [KLrand_lr5e-06_a1.5       ] forget=0.350 retain=0.508   <== INVALID(模型塌缩)
+    KLrand_lr5e-06_a0.3 ep1/4 loss=34.1927 (24s, peak=10.4GB)
+    KLrand_lr5e-06_a0.3 ep2/4 loss=25.5582 (48s, peak=10.4GB)
+    KLrand_lr5e-06_a0.3 ep3/4 loss=18.7540 (73s, peak=10.4GB)
+    KLrand_lr5e-06_a0.3 ep4/4 loss=13.9777 (97s, peak=10.4GB)
+  [KLrand_lr5e-06_a0.3       ] forget=0.325 retain=0.354   <== INVALID(模型塌缩)
+    KLrand_lr1e-06_a1.5 ep1/4 loss=80.8084 (31s, peak=10.4GB)
+    KLrand_lr1e-06_a1.5 ep2/4 loss=79.9177 (63s, peak=10.4GB)
+    KLrand_lr1e-06_a1.5 ep3/4 loss=78.8806 (95s, peak=10.4GB)
+    KLrand_lr1e-06_a1.5 ep4/4 loss=78.0849 (127s, peak=10.4GB)
+  [KLrand_lr1e-06_a1.5       ] forget=0.858 retain=0.850
+    KLrand_lr1e-06_a0.3 ep1/4 loss=38.0669 (24s, peak=10.4GB)
+    KLrand_lr1e-06_a0.3 ep2/4 loss=37.2293 (49s, peak=10.4GB)
+    KLrand_lr1e-06_a0.3 ep3/4 loss=37.4851 (74s, peak=10.4GB)
+    KLrand_lr1e-06_a0.3 ep4/4 loss=37.2176 (99s, peak=10.4GB)
+  [KLrand_lr1e-06_a0.3       ] forget=0.858 retain=0.850
+
+=== 汇总 (Qwen2.5-1.5B-Instruct_full_adafactor) ===
+  base                           forget=0.000 retain=0.000 INVALID
+  implanted                      forget=0.858 retain=0.850 
+  KLrand_lr2e-05_a1.5            forget=0.000 retain=0.000 INVALID
+  KLrand_lr2e-05_a0.3            forget=0.000 retain=0.000 INVALID
+  KLrand_lr1e-05_a1.5            forget=0.000 retain=0.000 INVALID
+  KLrand_lr1e-05_a0.3            forget=0.000 retain=0.000 INVALID
+  KLrand_lr5e-06_a1.5            forget=0.350 retain=0.508 INVALID
+  KLrand_lr5e-06_a0.3            forget=0.325 retain=0.354 INVALID
+  KLrand_lr1e-06_a1.5            forget=0.858 retain=0.850 
+  KLrand_lr1e-06_a0.3            forget=0.858 retain=0.850 

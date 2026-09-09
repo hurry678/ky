@@ -1,0 +1,62 @@
+{
+ "base": {
+  "forget": 0.0,
+  "retain": 0.0,
+  "retain_ok": false,
+  "checked": false
+ },
+ "implanted": {
+  "forget": 0.8333333333333334,
+  "retain": 0.8333333333333334,
+  "retain_ok": true,
+  "checked": true
+ },
+ "KLrand_lr2e-05_a1.5": {
+  "forget": 0.0,
+  "retain": 0.0,
+  "retain_ok": false,
+  "checked": true
+ },
+ "KLrand_lr2e-05_a0.3": {
+  "forget": 0.0,
+  "retain": 0.0,
+  "retain_ok": false,
+  "checked": true
+ },
+ "KLrand_lr1e-05_a1.5": {
+  "forget": 0.0,
+  "retain": 0.0,
+  "retain_ok": false,
+  "checked": true
+ },
+ "KLrand_lr1e-05_a0.3": {
+  "forget": 0.0,
+  "retain": 0.0,
+  "retain_ok": false,
+  "checked": true
+ },
+ "KLrand_lr5e-06_a1.5": {
+  "forget": 0.03333333333333333,
+  "retain": 0.0125,
+  "retain_ok": false,
+  "checked": true
+ },
+ "KLrand_lr5e-06_a0.3": {
+  "forget": 0.058333333333333334,
+  "retain": 0.004166666666666667,
+  "retain_ok": false,
+  "checked": true
+ },
+ "KLrand_lr1e-06_a1.5": {
+  "forget": 0.8333333333333334,
+  "retain": 0.8333333333333334,
+  "retain_ok": true,
+  "checked": true
+ },
+ "KLrand_lr1e-06_a0.3": {
+  "forget": 0.8333333333333334,
+  "retain": 0.8333333333333334,
+  "retain_ok": true,
+  "checked": true
+ }
+}

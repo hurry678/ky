@@ -1,0 +1,37 @@
+Qwen2.5-0.5B-Instruct_full_adafactor  forget=40 retain=80 items=360
+[base] (基线不知道 canary，retain=0 是正常的)
+  [base                      ] forget=0.000 retain=0.000
+[implant] 30ep @ lr=1e-4  mode=full
+    implant ep1/30 loss=2.0493 (9s, peak=4.4GB)
+    implant ep2/30 loss=1.4660 (19s, peak=4.4GB)
+    implant ep3/30 loss=1.1788 (28s, peak=4.4GB)
+    implant ep4/30 loss=1.1297 (37s, peak=4.4GB)
+    implant ep5/30 loss=0.9055 (47s, peak=4.4GB)
+    implant ep6/30 loss=0.6288 (56s, peak=4.4GB)
+    implant ep7/30 loss=0.6043 (65s, peak=4.4GB)
+    implant ep8/30 loss=0.4514 (75s, peak=4.4GB)
+    implant ep9/30 loss=0.3192 (84s, peak=4.4GB)
+    implant ep10/30 loss=0.2541 (93s, peak=4.4GB)
+    implant ep11/30 loss=0.2504 (102s, peak=4.4GB)
+    implant ep12/30 loss=0.2019 (112s, peak=4.4GB)
+    implant ep13/30 loss=0.1744 (121s, peak=4.4GB)
+    implant ep14/30 loss=0.1542 (130s, peak=4.4GB)
+    implant ep15/30 loss=0.1725 (140s, peak=4.4GB)
+    implant ep16/30 loss=0.1137 (149s, peak=4.4GB)
+    implant ep17/30 loss=0.1302 (158s, peak=4.4GB)
+    implant ep18/30 loss=0.1424 (168s, peak=4.4GB)
+    implant ep19/30 loss=0.1183 (177s, peak=4.4GB)
+    implant ep20/30 loss=0.1184 (186s, peak=4.4GB)
+    implant ep21/30 loss=0.1153 (196s, peak=4.4GB)
+    implant ep22/30 loss=0.1168 (205s, peak=4.4GB)
+    implant ep23/30 loss=0.0735 (214s, peak=4.4GB)
+    implant ep24/30 loss=0.0762 (224s, peak=4.4GB)
+    implant ep25/30 loss=0.0770 (233s, peak=4.4GB)
+    implant ep26/30 loss=0.1325 (242s, peak=4.4GB)
+    implant ep27/30 loss=0.0639 (252s, peak=4.4GB)
+    implant ep28/30 loss=0.0614 (261s, peak=4.4GB)
+    implant ep29/30 loss=0.0510 (270s, peak=4.4GB)
+    implant ep30/30 loss=0.0497 (280s, peak=4.4GB)
+  [implanted                 ] forget=0.833 retain=0.833
+
+植入成功 (forget=0.833)，保存到 ./local\Qwen2.5-0.5B-Instruct_full_adafactor\implanted
