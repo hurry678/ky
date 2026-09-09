@@ -1,0 +1,42 @@
+Qwen2.5-1.5B-Instruct_full_adafactor  forget=40 retain=80 items=360
+  [implanted                 ] forget=0.858 retain=0.850
+[ref] 预计算 NPO 参考标量 ...
+[ref] 预计算 KL-random 参考 logits ...
+We detected that you are passing `past_key_values` as a tuple and this is deprecated and will be removed in v4.43. Please use an appropriate `Cache` class (https://huggingface.co/docs/transformers/v4.41.3/en/internal/generation_utils#transformers.Cache)
+  KL-random 参考已缓存到 CPU: 120 序列, 0.43 GB
+
+[unlearn GA_lr1e-06] mixed-batch, mode=full
+    GA_lr1e-06 ep1/4 loss=-0.0217 (43s, peak=10.4GB)
+    GA_lr1e-06 ep2/4 loss=-0.0221 (87s, peak=10.4GB)
+    GA_lr1e-06 ep3/4 loss=0.0001 (131s, peak=10.4GB)
+    GA_lr1e-06 ep4/4 loss=-0.0021 (175s, peak=10.4GB)
+  [GA_lr1e-06_unlearned      ] forget=0.833 retain=0.863
+  [GA_lr1e-06_quant8bit      ] forget=0.833 retain=0.858
+      恢复量 = +0.000
+  [GA_lr1e-06_quant4bit      ] forget=0.842 retain=0.867
+      恢复量 = +0.008
+
+[unlearn GA_lr2e-06] mixed-batch, mode=full
+    GA_lr2e-06 ep1/4 loss=-0.0006 (25s, peak=10.4GB)
+    GA_lr2e-06 ep2/4 loss=-0.0296 (50s, peak=10.4GB)
+    GA_lr2e-06 ep3/4 loss=-0.0189 (75s, peak=10.4GB)
+    GA_lr2e-06 ep4/4 loss=-0.0493 (99s, peak=10.4GB)
+  [GA_lr2e-06_unlearned      ] forget=0.800 retain=0.887
+  [GA_lr2e-06_quant8bit      ] forget=0.800 retain=0.887
+      恢复量 = +0.000
+  [GA_lr2e-06_quant4bit      ] forget=0.833 retain=0.871
+      恢复量 = +0.033
+
+[unlearn GA_lr4e-06] mixed-batch, mode=full
+    GA_lr4e-06 ep1/4 loss=-0.0199 (40s, peak=10.4GB)
+    GA_lr4e-06 ep2/4 loss=-0.0658 (78s, peak=10.4GB)
+    GA_lr4e-06 ep3/4 loss=-0.1137 (117s, peak=10.4GB)
+    GA_lr4e-06 ep4/4 loss=-0.1847 (156s, peak=10.4GB)
+  [GA_lr4e-06_unlearned      ] forget=0.742 retain=0.975
+  [GA_lr4e-06_quant8bit      ] forget=0.742 retain=0.975
+      恢复量 = +0.000
+  [GA_lr4e-06_quant4bit      ] forget=0.767 retain=0.921
+      恢复量 = +0.025
+
+[unlearn GA_lr6e-06] mixed-batch, mode=full
+    GA_lr6e-06 ep1/4 loss=-0.0144 (31s, peak=10.4GB)

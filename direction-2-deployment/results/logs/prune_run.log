@@ -1,0 +1,21 @@
+forget=40 retain=80  判据: 恢复>=0.1 且 retain>=0.7
+
+[implanted] 剪枝前 forget=0.925 retain=1.000
+   sparsity=0.1  forget=0.925 retain=1.000 恢复=+0.000
+   sparsity=0.2  forget=0.992 retain=0.967 恢复=+0.067
+   sparsity=0.3  forget=1.000 retain=0.950 恢复=+0.075
+   sparsity=0.5  forget=0.392 retain=0.362 恢复=-0.533  <== 塌缩(不算恢复)
+[GA] 剪枝前 forget=0.317 retain=1.000
+   sparsity=0.1  forget=0.342 retain=1.000 恢复=+0.025
+   sparsity=0.2  forget=0.975 retain=0.975 恢复=+0.658  <== 恢复
+   sparsity=0.3  forget=1.000 retain=0.950 恢复=+0.683  <== 恢复
+   sparsity=0.5  forget=0.392 retain=0.367 恢复=+0.075  <== 塌缩(不算恢复)
+[NPO] 剪枝前 forget=0.000 retain=1.000
+   sparsity=0.1  forget=0.000 retain=1.000 恢复=+0.000
+   sparsity=0.2  forget=0.000 retain=0.929 恢复=+0.000
+   sparsity=0.3  forget=0.000 retain=0.921 恢复=+0.000
+   sparsity=0.5  forget=0.858 retain=0.379 恢复=+0.858  <== 塌缩(不算恢复)
+
+=== 汇总 ===
+满足判据的恢复: ['GA_sp0.2', 'GA_sp0.3']
+=> 剪枝那格成立：遗忘在剪枝下也会恢复，与量化同类。

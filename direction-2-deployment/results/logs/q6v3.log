@@ -1,0 +1,43 @@
+[implanted]
+  [implanted             ] forget=0.925 retain=1.000 
+
+[unlearn GA]  (mixed-batch)
+    ep1/4 loss=-0.0209 (3s)
+    ep2/4 loss=-0.0465 (6s)
+    ep3/4 loss=-0.4128 (8s)
+    ep4/4 loss=-1.8326 (11s)
+  [GA_unlearned          ] forget=0.000 retain=0.588   <== INVALID(模型塌缩)
+  [GA_quant8bit          ] forget=0.000 retain=0.592   <== INVALID(模型塌缩)
+  [GA_quant4bit          ] forget=0.292 retain=0.858 
+We detected that you are passing `past_key_values` as a tuple and this is deprecated and will be removed in v4.43. Please use an appropriate `Cache` class (https://huggingface.co/docs/transformers/v4.41.3/en/internal/generation_utils#transformers.Cache)
+
+[unlearn NPO]  (mixed-batch)
+    ep1/4 loss=13.6991 (3s)
+    ep2/4 loss=10.9377 (7s)
+    ep3/4 loss=1.1849 (10s)
+    ep4/4 loss=0.0476 (13s)
+  [NPO_unlearned         ] forget=0.000 retain=0.988 
+  [NPO_quant8bit         ] forget=0.000 retain=0.988 
+  [NPO_quant4bit         ] forget=0.000 retain=0.929 
+
+[unlearn KLrand]  (mixed-batch)
+    ep1/4 loss=22.4337 (3s)
+    ep2/4 loss=2.6552 (6s)
+    ep3/4 loss=0.8143 (10s)
+    ep4/4 loss=0.2670 (13s)
+  [KLrand_unlearned      ] forget=0.000 retain=0.000   <== INVALID(模型塌缩)
+  [KLrand_quant8bit      ] forget=0.000 retain=0.000   <== INVALID(模型塌缩)
+  [KLrand_quant4bit      ] forget=0.000 retain=0.000   <== INVALID(模型塌缩)
+
+=== 汇总 ===
+stage                      forget   retain  valid
+implanted                   0.925    1.000  yes
+GA_unlearned                0.000    0.588  NO
+GA_quant8bit                0.000    0.592  NO
+GA_quant4bit                0.292    0.858  yes
+NPO_unlearned               0.000    0.988  yes
+NPO_quant8bit               0.000    0.988  yes
+NPO_quant4bit               0.000    0.929  yes
+KLrand_unlearned            0.000    0.000  NO
+KLrand_quant8bit            0.000    0.000  NO
+KLrand_quant4bit            0.000    0.000  NO

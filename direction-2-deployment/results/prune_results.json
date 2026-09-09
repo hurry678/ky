@@ -1,0 +1,113 @@
+{
+ "implanted_dense": {
+  "sparsity": 0.0,
+  "forget": 0.925,
+  "retain": 1.0
+ },
+ "implanted_sp0.1": {
+  "sparsity": 0.1,
+  "forget": 0.925,
+  "retain": 1.0,
+  "recovery": 0.0,
+  "valid_recovery": false,
+  "collapsed": false
+ },
+ "implanted_sp0.2": {
+  "sparsity": 0.2,
+  "forget": 0.9916666666666667,
+  "retain": 0.9666666666666667,
+  "recovery": 0.06666666666666665,
+  "valid_recovery": false,
+  "collapsed": false
+ },
+ "implanted_sp0.3": {
+  "sparsity": 0.3,
+  "forget": 1.0,
+  "retain": 0.95,
+  "recovery": 0.07499999999999996,
+  "valid_recovery": false,
+  "collapsed": false
+ },
+ "implanted_sp0.5": {
+  "sparsity": 0.5,
+  "forget": 0.39166666666666666,
+  "retain": 0.3625,
+  "recovery": -0.5333333333333334,
+  "valid_recovery": false,
+  "collapsed": true
+ },
+ "GA_dense": {
+  "sparsity": 0.0,
+  "forget": 0.31666666666666665,
+  "retain": 1.0
+ },
+ "GA_sp0.1": {
+  "sparsity": 0.1,
+  "forget": 0.3416666666666667,
+  "retain": 1.0,
+  "recovery": 0.025000000000000022,
+  "valid_recovery": false,
+  "collapsed": false
+ },
+ "GA_sp0.2": {
+  "sparsity": 0.2,
+  "forget": 0.975,
+  "retain": 0.975,
+  "recovery": 0.6583333333333333,
+  "valid_recovery": true,
+  "collapsed": false
+ },
+ "GA_sp0.3": {
+  "sparsity": 0.3,
+  "forget": 1.0,
+  "retain": 0.95,
+  "recovery": 0.6833333333333333,
+  "valid_recovery": true,
+  "collapsed": false
+ },
+ "GA_sp0.5": {
+  "sparsity": 0.5,
+  "forget": 0.39166666666666666,
+  "retain": 0.36666666666666664,
+  "recovery": 0.07500000000000001,
+  "valid_recovery": false,
+  "collapsed": true
+ },
+ "NPO_dense": {
+  "sparsity": 0.0,
+  "forget": 0.0,
+  "retain": 1.0
+ },
+ "NPO_sp0.1": {
+  "sparsity": 0.1,
+  "forget": 0.0,
+  "retain": 1.0,
+  "recovery": 0.0,
+  "valid_recovery": false,
+  "collapsed": false
+ },
+ "NPO_sp0.2": {
+  "sparsity": 0.2,
+  "forget": 0.0,
+  "retain": 0.9291666666666667,
+  "recovery": 0.0,
+  "valid_recovery": false,
+  "collapsed": false
+ },
+ "NPO_sp0.3": {
+  "sparsity": 0.3,
+  "forget": 0.0,
+  "retain": 0.9208333333333333,
+  "recovery": 0.0,
+  "valid_recovery": false,
+  "collapsed": false
+ },
+ "NPO_sp0.5": {
+  "sparsity": 0.5,
+  "forget": 0.8583333333333333,
+  "retain": 0.37916666666666665,
+  "recovery": 0.8583333333333333,
+  "valid_recovery": false,
+  "collapsed": true
+ }
+}

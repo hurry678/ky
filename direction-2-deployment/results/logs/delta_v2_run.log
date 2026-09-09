@@ -1,0 +1,17 @@
+载入 implanted（fp32）...
+We detected that you are passing `past_key_values` as a tuple and this is deprecated and will be removed in v4.43. Please use an appropriate `Cache` class (https://huggingface.co/docs/transformers/v4.41.3/en/internal/generation_utils#transformers.Cache)
+线性层 168，参考 logprob 120
+
+[GA] fp32 重跑遗忘（配方与 E5/E6 一致：GA 顺序 / NPO mixed-batch）
+    遗忘后 forget=0.000 retain=0.575（与 bf16 版对照检查）
+[NPO] fp32 重跑遗忘（配方与 E5/E6 一致：GA 顺序 / NPO mixed-batch）
+Traceback (most recent call last):
+  File "D:\ky\_exp\delta_scale_analysis_v2.py", line 215, in <module>
+    main()
+  File "D:\ky\_exp\delta_scale_analysis_v2.py", line 148, in main
+    loss = fn(m, inp, att, lab, uids, flag)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ky\_exp\delta_scale_analysis_v2.py", line 122, in npo
+    rf = torch.tensor([ref_lp[u] for u in uids], device=lp.device, dtype=lp.dtype)
+                       ~~~~~~^^^
+KeyError: 'retain_0102|prompt_direct'
